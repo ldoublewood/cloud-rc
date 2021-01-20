@@ -1,0 +1,12 @@
+
+bindkey "^T" copy
+bindkey "^J" paste .
+
+# 屏幕缓冲区 1024 行。
+defscrollback 10240
+
+# 在最下一行显示窗口列表和时钟
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H(%l) %{..Y} %Y/%m/%d %c:%s "
+
