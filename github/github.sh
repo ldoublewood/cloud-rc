@@ -4,6 +4,7 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 name=$1
+[ -d ~/.ssh ] || mkdir ~/.ssh
 cd ~/.ssh
 mkdir $name
 cd $name
